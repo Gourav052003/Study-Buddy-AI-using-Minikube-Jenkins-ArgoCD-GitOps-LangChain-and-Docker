@@ -12,7 +12,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHub-Token', url: 'https://github.com/Gourav052003/Study-Buddy-AI-using-Minikube-Jenkins-ArgoCD-GitOps-LangChain-and-Docker.git']])
             }
         }        
-        stage('Build Docker Image') {
+        stage('Building Docker Image') {
             steps {
                 script {
                     echo 'Building Docker image...'
