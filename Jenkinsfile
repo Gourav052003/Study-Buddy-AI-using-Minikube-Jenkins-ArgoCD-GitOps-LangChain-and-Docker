@@ -43,7 +43,7 @@ pipeline {
         stage('Commit Updated YAML') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
+                    withCredentials([usernamePassword(credentialsId: 'GitHub-Token', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
                         sh '''
                         git config user.name "gourav052003"
                         git config user.email "gourav052003@gmail.com"
