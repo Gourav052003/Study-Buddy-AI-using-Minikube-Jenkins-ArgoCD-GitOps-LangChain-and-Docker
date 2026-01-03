@@ -75,7 +75,7 @@ def main():
     if st.session_state.quiz_submitted:
         st.header("Quiz RESUTLS")
         results_df = st.session_state.quiz_manager.generate_result_dataframe()
-        print(results_df)
+        
         if not results_df.empty:
             correct_count = results_df["is_correct"].sum()
             total_questions = len(results_df)

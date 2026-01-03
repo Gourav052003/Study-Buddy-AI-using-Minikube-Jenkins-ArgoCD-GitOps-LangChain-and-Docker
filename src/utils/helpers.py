@@ -66,7 +66,7 @@ class QuizManager:
                     f"Fill in the blank for Question {i+1}",
                     key=f"fill_blank_{i}"
                 )
-                print(user_answer)
+                
                 self.user_answers.append(user_answer)
 
     
